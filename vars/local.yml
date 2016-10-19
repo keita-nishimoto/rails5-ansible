@@ -1,0 +1,4 @@
+rbenv_install_home_dir : /home/vagrant/
+rbenv_install_user : vagrant
+document_root: /home/vagrant/rails5-api-prototype/public
+domain_name: dev.rails5-api.net
