@@ -1,0 +1,5 @@
+- name: check {{ ruby_version }} is installed
+  shell: bash -lc "rbenv versions | grep {{ ruby_version }}"
+  register: rbenv_check_install
+  changed_when: no
+  ignore_errors: yes
