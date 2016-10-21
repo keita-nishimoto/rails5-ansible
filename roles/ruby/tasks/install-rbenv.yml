@@ -6,7 +6,7 @@
   become: no
   git: repo=https://github.com/sstephenson/ruby-build.git dest={{ ruby_build_install_dir }} force=yes
 
-- name: Check nodebrew Is Installed.
+- name: check rbenv is Installed.
   become: no
   shell: bash -lc "rbenv --version"
   register: rbenv_is_installed
