@@ -3,5 +3,5 @@
   vars_files:
     - vars/{{ stage }}.yml
   roles:
-    - common
+    #- common
     - ruby
