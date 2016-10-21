@@ -6,7 +6,7 @@
   become: no
   git: repo=https://github.com/sstephenson/ruby-build.git dest={{ ruby_build_install_dir }} force=yes
 
-- name: check rbenv is Installed.
+- name: check rbenv is installed
   become: no
   shell: bash -lc "rbenv --version"
   register: rbenv_is_installed
@@ -18,7 +18,7 @@
     cd {{ ruby_build_install_dir }}
     ./install.sh
 
-- name: add rbenv to PATH
+- name: add rbenv to path
   become: no
   lineinfile: >
     dest="{{ rbenv_install_user_dir }}/.bash_profile"
