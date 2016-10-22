@@ -1,0 +1,5 @@
+- name: Replace my.cnf
+  template: src=my.cnf.j2 dest=/etc/my.cnf owner=root group=root mode=0644
+
+- name: Add mysqld to StartUps on boot And Be Running
+  service: enabled=yes name=mysqld state=running

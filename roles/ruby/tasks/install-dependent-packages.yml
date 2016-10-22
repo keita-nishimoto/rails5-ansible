@@ -1,0 +1,6 @@
+- name: install dependent packages
+  yum: name={{ item }}
+  with_items:
+    - openssl-devel
+    - readline-devel
+    - zlib-devel

@@ -1,0 +1,4 @@
+- include: install-mysql.yml
+- include: settings-mysql.yml
+- include: init-root-password.yml
+- include: create-database.yml

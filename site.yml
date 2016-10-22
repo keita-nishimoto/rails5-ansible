@@ -1,6 +1,8 @@
 - hosts: local
   become: yes
   vars_files:
-      - vars/{{ stage }}.yml
+    - vars/{{ stage }}.yml
   roles:
     - common
+    - ruby
+    - mysql
